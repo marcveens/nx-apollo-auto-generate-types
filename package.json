@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "nx run-many --parallel --target=serve --all",
-    "build": "nx run-many --parallel --target=build --all"
+    "build": "nx run-many --parallel --target=build --all",
+    "===== UTILS =====": "",
+    "generate-gql-types": "graphql-codegen --config ./packages/apollo-server/codegen.yml"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,9 @@
   },
   "homepage": "https://github.com/marcveens/nx-apollo-auto-generate-types#readme",
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typescript": "^2.4.11",
+    "@graphql-codegen/typescript-resolvers": "^2.6.4",
     "@nrwl/cli": "13.10.4",
     "@nrwl/eslint-plugin-nx": "14.1.7",
     "@nrwl/jest": "14.1.7",
@@ -41,6 +46,8 @@
     "packages/**"
   ],
   "dependencies": {
+    "apollo-server": "^3.7.0",
+    "graphql": "^16.5.0",
     "tslib": "^2.3.0"
   }
 }

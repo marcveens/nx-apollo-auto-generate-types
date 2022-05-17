@@ -1,0 +1,8 @@
+schema: "./packages/apollo-server/src/schema/typeDefs.ts"
+generates:
+  ./packages/apollo-server/src/types/graphql-types.ts:
+    config:
+      useIndexSignature: true
+    plugins:
+      - typescript
+      - typescript-resolvers
