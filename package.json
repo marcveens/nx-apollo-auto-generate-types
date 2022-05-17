@@ -1,0 +1,46 @@
+{
+  "name": "nx-apollo-auto-generate-types",
+  "version": "1.0.0",
+  "description": "Example repository to show how automatic GraphQL -> Typescript types generation can be done using Nx",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nx run-many --parallel --target=serve --all",
+    "build": "nx run-many --parallel --target=build --all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcveens/nx-apollo-auto-generate-types.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcveens/nx-apollo-auto-generate-types/issues"
+  },
+  "homepage": "https://github.com/marcveens/nx-apollo-auto-generate-types#readme",
+  "devDependencies": {
+    "@nrwl/cli": "13.10.4",
+    "@nrwl/eslint-plugin-nx": "14.1.7",
+    "@nrwl/jest": "14.1.7",
+    "@nrwl/linter": "14.1.7",
+    "@nrwl/node": "^14.1.7",
+    "@nrwl/workspace": "13.10.4",
+    "@types/jest": "27.4.1",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "~5.18.0",
+    "@typescript-eslint/parser": "~5.18.0",
+    "eslint": "~8.12.0",
+    "eslint-config-prettier": "8.1.0",
+    "jest": "27.5.1",
+    "nx": "13.10.4",
+    "prettier": "^2.5.1",
+    "ts-jest": "27.1.4",
+    "ts-node": "9.1.1",
+    "typescript": "~4.6.2"
+  },
+  "workspaces": [
+    "packages/**"
+  ],
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
