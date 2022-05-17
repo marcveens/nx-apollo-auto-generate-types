@@ -9,7 +9,8 @@
       "options": {
         "outputPath": "dist/packages/apollo-server",
         "main": "packages/apollo-server/src/main.ts",
-        "tsConfig": "packages/apollo-server/tsconfig.app.json"
+        "tsConfig": "packages/apollo-server/tsconfig.app.json",
+        "webpackConfig": "packages/apollo-server/webpack.config.js"
       },
       "configurations": {
         "production": {
